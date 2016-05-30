@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html>
+  <head>
+    <meta charset="utf-8">
+    <title></title>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+    <script src="script.js" charset="utf-8"></script>
+    <link rel="stylesheet" href="stylesheet.css" charset="utf-8">
+  </head>
+  <body>
+  <!--inputs for employee first and last name, employee ID number, job title and yearly salary.-->
+    <h1>Employee Input Form</h1>
+  <form id="empForm">
+      <table>
+        <tr>
+          <td>First Name:</td>
+          <td><input type="text" id="firstNameIn" value="" required/></td>
+        </tr>
+        <tr>
+          <td>Last Name:</td>
+          <td><input type="text" id="lastNameIn" value="" required/></td>
+        </tr>
+        <tr>
+          <td>Employee ID#:</td>
+          <td><input type="number" id="empIdIn" value="" required/></td>
+        </tr>
+        <tr>
+          <td>Job Title:</td>
+          <td><input type="text" id="jobTitleIn" value="" required/></td>
+        </tr>
+        <tr>
+          <td>Yearly Salary:</td>
+          <td><input type="number" id="salaryIn" value="" required/></td>
+        </tr>
+      </table>
+      <button type="button" onclick="addEmployee()">submit</button>
+    </form>
+
+    <p id="empOut">Employee information last submitted: <span id="empEntered"></span></p>
+
+    <div id="left">
+      <p>Total monthly salary: <span id="salaryMonthly"></span></p>
+
+      <form id='delForm'>
+        Employee ID:<input type="number" id="delEmpIn" value=""><br>
+        <button type="button" onclick="delEmployee()">Delete</button>
+      </form>
+    </div>
+  </body>
+</html>
+<!--<input type="text" id="in" value="">-->

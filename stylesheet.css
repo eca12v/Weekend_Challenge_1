@@ -1,0 +1,20 @@
+#empForm {
+  margin-right: 70px;
+  display:inline-block;
+
+  float:left;
+
+}
+
+#empOut {
+  display:inline-block;
+  margin-top: 0;
+
+
+}
+
+#left {
+  float:left;
+  clear:left;
+  display:inline;
+}
